@@ -17,6 +17,7 @@
 
     <modules>
         <module>client-gateway</module>
+        <module>business-gateway</module>
         <module>spring-boot-admin</module>
     </modules>
 
