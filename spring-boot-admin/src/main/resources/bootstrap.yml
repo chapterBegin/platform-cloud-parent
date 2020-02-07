@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: spring-boot-admin
+  cloud:
+    nacos:
+      config:
+        server-addr: http://192.168.1.8:8748
+        enabled: true
+        file-extension: yml
+        group: cloud
