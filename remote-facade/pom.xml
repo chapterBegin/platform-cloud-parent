@@ -9,10 +9,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.antivirus</groupId>
-    <artifactId>business-gateway</artifactId>
+    <artifactId>remote-facade</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>business-gateway</name>
-    <description>B端网关</description>
+    <name>remote-facade</name>
+    <description>服务间远程接口API</description>
+
+    <modules>
+        <module>user-facade</module>
+    </modules>
 
     <properties>
         <java.version>1.8</java.version>
@@ -21,24 +25,11 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-        </dependency>
     </dependencies>
+
 
 </project>
