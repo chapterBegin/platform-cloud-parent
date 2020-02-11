@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: user-provider
+  profiles:
+    active: test
+  cloud:
+    nacos:
+      config:
+        enabled: true
+        server-addr: http://192.168.1.8:8748
+        file-extension: yml
+        group: cloud
+
+dubbo:
+  application:
+    qos-enable: true
+  cloud:
+    subscribed-services:
+  protocol:
+    port: -1
+
+
